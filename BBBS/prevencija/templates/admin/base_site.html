@@ -1,0 +1,31 @@
+{% extends 'admin/base.html' %}
+{% load static %}
+{% block title %}{{ title }} P R E V E N C I J A . B A{% endblock %}
+
+{% block extrastyle %}
+<style>
+    #header{
+        background-color: #dddddd;
+    }
+    #user-tools{
+        color: #a06eaf;
+    }
+    :root {
+        --primary: #a06eaf;
+        --secondary: #8cc63f;
+        --link-fg: #666666;
+        --selected-row: #ffc;
+        --button-hover-bg: #8cc63f;
+        --default-button-hover-bg: #6aa41c;
+    }
+
+
+</style>
+{% endblock %}
+
+{% block branding %}
+<img src="{% static 'img/logo.png'%}" height=40/>
+
+
+
+{% endblock %}
